@@ -40,7 +40,7 @@ pool:
 resources:
   webhooks:
     - webhook: testingwebhook       ## Webhook alias
-      connection: httpheader    ### Incoming webhook service connection
+      connection: webhook-with-http-header    ### Incoming webhook service connection
       #filters:                     ### List of JSON parameters to filter; Parameters are AND'ed
       #path: "namespace"        ### JSON path in the payload
 
