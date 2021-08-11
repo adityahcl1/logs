@@ -56,4 +56,4 @@ stages:
         - task: Bash@3
           inputs:
             targetType: 'inline'
-            script: 'echo "Namespace: ${{ parameters.testingwebhook.namespace }}"'
+            script: 'echo "Namespace: ${{ parameters.httoheader-webhook.namespace }}"'
