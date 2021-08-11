@@ -39,7 +39,7 @@ pool:
 
 resources:
   webhooks:
-    - webhook: httpheader-webhook       ## Webhook alias
+    - webhook: httpheader       ## Webhook alias
       connection: webhook-with-http-header    ### Incoming webhook service connection
       #filters:                     ### List of JSON parameters to filter; Parameters are AND'ed
       #path: "namespace"        ### JSON path in the payload
@@ -56,4 +56,4 @@ stages:
         - task: Bash@3
           inputs:
             targetType: 'inline'
-            script: 'echo "Namespace: ${{ parameters.httoheader-webhook.namespace }}"'
+            script: 'echo "Namespace: ${{ parameters.httpheader.namespace }}"'
